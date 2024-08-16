@@ -1,0 +1,38 @@
+<odoo>
+ <data>
+<!-- Membuat View Tree/List Print Document -->
+<record id="print_document_view_tree" model="ir.ui.view">
+   <field name="name">print.document.tree</field>
+   <field name="model">print.document</field>
+   <field name="arch" type="xml">
+       <tree string="Print Document">
+           <field name="name"/>
+           <field name="description"/>
+       </tree>
+   </field>
+</record>
+<!-- Membuat View Form Print Document -->
+
+<!-- Membuat Action/Event Print Document -->
+<record id="print_document_action" model="ir.actions.act_window">
+   <field name="name">Print Document</field>
+   <field name="res_model">print.document</field>
+   <field name="view_mode">kanban</field>
+   <field name="help" type="html">
+       <p name="o_view_nocontent_smiling_face">
+           SAP Print Document
+       </p>
+   </field>
+</record>
+
+<!-- Membuat Menu Dashboard -->
+<menuitem id="menu_dashboard_print_document" name="Print Document" web_icon="print_document,static/description/icon.png"/>
+<!-- Membuat Menu Bar Print Document -->
+<menuitem id="menu_bar_master" name="Document" parent="menu_dashboard_print_document"/>
+<!-- Membuat Menu Item  -->
+<menuitem id="menu_item_master_sales_order" name="Print SAP SO" parent="menu_bar_master" action="print_sales_order_action"/>
+<menuitem id="menu_item_master_purchase_order" name="Print SAP PO" parent="menu_bar_master" action="print_sales_order_action"/>
+<menuitem id="menu_item_master_purchase_req" name="Print SAP PR" parent="menu_bar_master" action="print_sales_order_action"/>
+
+ </data>
+</odoo>

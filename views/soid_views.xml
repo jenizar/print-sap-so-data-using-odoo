@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+<!-- Membuat View Tree/List SAP Sales Order -->  
+   <record id="so_invoice_view_tree" model="ir.ui.view">
+    <field name="name">so_invoice_tree</field>
+    <field name="model">so.invoice</field>
+    <field name="arch" type="xml">
+        <tree string="Print SAP Sales Order">
+            <field name="invoice_no"/>
+            <field name="SALESORDERID"/>
+            <field name="CUSTOMER"/>
+            <field name="CURRENCYCODE"/>
+            <field name="GROSSAMOUNT"/>
+        </tree>    
+    </field>
+   </record>
+
+<!-- Membuat View Form Travel Package -->
+<record id="so_invoice_view_form" model="ir.ui.view">
+   <field name="name">so.invoice.form</field>
+   <field name="model">so.invoice</field>
+   <field name="arch" type="xml">
+       <form string="Sales Order Form">
+            <header>
+                <button name="action_print_session" type="object" string="Print SO" states="open" class="oe_highlight"/>
+                <button name="action_cancel" type="object" string="Cancel" states="open"/>
+                <button name="action_close" type="object" string="Close" states="open" class="oe_highlight"/>
+                <field name="state" widget="statusbar" statusbar_visible="draft,open,done"/>
+
+                <button name="get_so" type="object" string="Get SAP SO Data" class="oe_highlight"/>
+            </header>
+           <sheet>
+                <div class="oe_title">
+                    <h1>
+                        <field name="invoice_no"/>
+                    </h1>
+                </div>
+              <group name="input_parameter" string="Input Parameter">
+               <group>
+                <field name="SALESORDERID"/>
+                <field name="CUSTOMER"/>
+                <field name="ADDRESS1"/>
+                <field name="ADDRESS2"/>
+               </group>
+               <group>
+                <field name="CHANGEDAT"/>
+                <field name="EXPIREDAT"/>
+               </group>
+              </group>  
+             <notebook>
+                <page string="Order Lines">
+                <group>
+                 <field name="soid_line" mode="tree,kanban" nolabel="1"  colspan="2">
+                  <tree string="Order Lines">
+                   <field name="PRODUCTNAME"/>
+                   <field name="MEASUREUNIT"/>
+                   <field name="ITEMNETAMOUNT"/>
+                   <field name="ITEMTAXAMOUNT"/>
+                   <field name="SUB_TOTAL"/>
+                 </tree>
+                 <form string='Order Lines'>
+                  <group>
+                   <field name="PRODUCTNAME"/>
+                   <field name="MEASUREUNIT"/>
+                   <field name="ITEMNETAMOUNT"/>
+                   <field name="ITEMTAXAMOUNT"/>
+                   <field name="SUB_TOTAL"/>
+                  </group>
+                 </form>
+                 </field>
+                  <field name="TOTALAMT" style="text-align:right;"/>
+                </group>
+                </page>                
+            </notebook>             
+           </sheet>
+       </form>
+   </field>
+</record>
+
+ <!-- Membuat Action/Event Print Sales Order -->
+<record id="print_sales_order_action" model="ir.actions.act_window">
+   <field name="name">Print SAP Sales Order</field>
+   <field name="res_model">so.invoice</field>
+   <field name="view_mode">tree,form,kanban</field>
+</record>  
+ </data>
+</odoo>

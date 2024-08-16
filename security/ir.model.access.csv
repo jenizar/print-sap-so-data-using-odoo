@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_print_document_user,print_document.print.document,model_print_document,base.group_user,1,1,1,1
+access_so_invoice_user,print_document.so.invoice,model_so_invoice,base.group_user,1,1,1,1
+access_soid_line_user,print_document.soid.line,model_soid_line,base.group_user,1,1,1,1
