@@ -3,14 +3,15 @@ Get SAP Sales Order data, print SAP Sales Order using Odoo ERP
 
 os: Linux Ubuntu 22.04 LTS, Odoo CE v16
 
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/jenizar/print-sap-so-data-using-odoo/blob/main/screenshots/pic1.png)
+
+![alt text](https://github.com/jenizar/print-sap-so-data-using-odoo/blob/main/screenshots/pic2.png)
+
+![alt text](https://github.com/jenizar/print-sap-so-data-using-odoo/blob/main/screenshots/pic3.png)
+
+![alt text](https://github.com/jenizar/print-sap-so-data-using-odoo/blob/main/screenshots/pic4.png)
+
+![alt text](https://github.com/jenizar/print-sap-so-data-using-odoo/blob/main/screenshots/pic5.png)
 
 References:
 
