@@ -1,7 +1,7 @@
 # print-sap-so-data-using-odoo
 Get SAP Sales Order data, print SAP Sales Order using Odoo ERP
 
-os: Linux Ubuntu 22.04 LTS, Odoo CE v16
+Linux Ubuntu 22.04 LTS, Odoo CE v16
 
 ![alt text](https://github.com/jenizar/print-sap-so-data-using-odoo/blob/main/screenshots/pic1.png)
 
