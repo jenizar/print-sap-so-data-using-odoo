@@ -13,6 +13,8 @@ Linux Ubuntu 22.04 LTS, Odoo CE v16
 
 ![alt text](https://github.com/jenizar/print-sap-so-data-using-odoo/blob/main/screenshots/pic5.png)
 
+![alt text](https://github.com/jenizar/print-sap-so-data-using-odoo/blob/main/screenshots/pic6.png)
+
 References:
 
 1. https://odooerpapps.wordpress.com/2024/08/17/get-sap-sales-order-data-print-output-using-odoo-erp/
