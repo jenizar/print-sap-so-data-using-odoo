@@ -24,9 +24,11 @@
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',        
-        'report/report_print_so.xml',
+        'security/ir.model.access.csv',      
+        #'report/report_print_so.xml',
+        'report/report_print_po.xml',  
         'views/sequence_data.xml',
+        'views/poid_views.xml',
         'views/soid_views.xml',
         'views/views.xml',
         'views/templates.xml',

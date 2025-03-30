@@ -31,7 +31,7 @@
 <menuitem id="menu_bar_master" name="Document" parent="menu_dashboard_print_document"/>
 <!-- Membuat Menu Item  -->
 <menuitem id="menu_item_master_sales_order" name="Print SAP SO" parent="menu_bar_master" action="print_sales_order_action"/>
-<menuitem id="menu_item_master_purchase_order" name="Print SAP PO" parent="menu_bar_master" action="print_sales_order_action"/>
+<menuitem id="menu_item_master_purchase_order" name="Print SAP PO" parent="menu_bar_master" action="print_purchase_order_action"/>
 <menuitem id="menu_item_master_purchase_req" name="Print SAP PR" parent="menu_bar_master" action="print_sales_order_action"/>
 
  </data>
